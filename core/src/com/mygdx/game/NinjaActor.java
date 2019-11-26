@@ -35,7 +35,7 @@ class NinjaActor extends Actor {
         for (Actor m : game.enemies) {
             if (m != this && collide(m)) {
                 game.end = true;
-                m.dead = true;
+//                m.dead = false;
                 explode();
             }
         }

@@ -15,6 +15,6 @@ class Enemy extends Actor {
     @Override
     void execute() {
         sprite.setX(sprite.getX() - SPEED);
-        dead = sprite.getY() + sprite.getHeight() < 0;
+        dead = sprite.getX() + sprite.getWidth() < 0;
     }
 }
